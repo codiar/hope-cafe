@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Cairo', system-ui, sans-serif;
+    --font-latin: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-latin {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-arabic {
+  font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* Hide scrollbar for category tabs while maintaining scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
